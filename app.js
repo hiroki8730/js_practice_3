@@ -64,8 +64,8 @@ const clickHandler = (e) => {
         setupQuiz();
     } else {
         window.alert("終了！あなたの正解数は" + score + "/" + quizLength + "です！");
-        if (score === 3) {
-            window.alert("全問正解おめでとう！参考にした動画ページに移動します。つくってみてね！")
+        if (score === quizLength) {
+            window.alert("全問正解おめでとう！\n参考にした動画ページに移動します。\nつくってみてね！")
             location.href = "https://www.youtube.com/watch?v=fAluwAmHrws";
         }
     }
